@@ -1,6 +1,4 @@
-
-# Lab 1
-## Basic commands
+# Lab1
 ```Bash 
 # Who am i
 whoami
@@ -8,6 +6,7 @@ whoami
 # Look for command instructions
 # Type f and b to go forward and backward
 # Type p to exit
+info any-command
 man any-command
 # Find "text" in instructions
 # Type n and p to go to next and previous matching answer
@@ -69,37 +68,8 @@ echo *o*
 echo *.py
 # Find filename with length 3
 echo ???
-```
-
-## File permissions
-File information  
-* Permission:
-* File type(1 digit) + onwer permission(3 digits) + group permission(3 digits) + others permission(3 digits)
-  * r--: can read
-  * rw-: can read, write
-  * r-x: can read, execute
-  * rwx: can read, write, execute
-* Hard link count
-* Owner
-* Group
-* File size (in bytes)
-* Modification data & time
-* File name
-
-```Bash
-# 0: no permission
-# 4: can read
-# 2: can write
-# 1: can execute
-# 6(4+2): can read, write
-# 5(4+1): can read, execute
-# 3(2+1): can write, execute
-# 7(4+2+1): can read, write, execute
-
-# All permissions to owner and group, no permission to others
-chmod 770 file-name
-# All permissions to owner, readble, writable to group, exectable to others
-chmod 761 file-name
+# Print without going to new line
+echo -n text
 ```
 
 ## Nano editor
