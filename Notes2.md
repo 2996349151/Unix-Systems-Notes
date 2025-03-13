@@ -37,7 +37,7 @@ chmod 761 file-name
 
 chmod u+x file-name
 chmod g-rw file-name
-chmoe a=rxw file-name
+chmod a=rxw file-name
 ```
 
 ## Shell Scripts
@@ -64,7 +64,6 @@ chmod u+x first.sh
 # No spaces around = !!!!!
 ATEST='mydata'
 echo $ATEST
-export ATEST
 
 # Command substitution
 lsoutput='ls -l'
