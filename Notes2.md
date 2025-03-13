@@ -61,17 +61,20 @@ chmod u+x first.sh
 ```Bash
 # Variable
 # $variable is to reference, only variable is to assign
-ATEST = 'mydata'
+# No spaces around = !!!!!
+ATEST='mydata'
 echo $ATEST
 export ATEST
 
 # Command substitution
-lsoutput = 'ls -l'
+lsoutput='ls -l'
 echo $lsoutput
 
 # Input
-read filename
-echo $filename
+read text
+echo $text
+# In outside, it can be a file inpur
+./run.sh < input.txt
 
 # $0 stores the name of the script.
 # $# stores the number of arguments.
@@ -81,31 +84,17 @@ echo $filename
 ./file-name.sh arg1 arg2 arg3
 # $n stores nth arguements
 
-# IF
-if [[some_condiition]]; then
-# command
-else
-# command
-fi
-
-# Loop
-while [[some_condiition]]; do
-# command
-done
-
-for i in variable; do
-# command
-done
-
 # Return
 exit return_value
 
 # String add
-added_s = $s1$s2
+added_s=$s1$s2
+added_s2="some text: $s1 and $s2"
 
 # Arithmetic operations
-echo $((v1 + v2))
-echo $((v1 + 1))
+v1=$((v1+v2))
+v2=$((v1+1))
+((v1++))
 
 # Number Comparision
 # -eq, -ne
