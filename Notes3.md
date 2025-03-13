@@ -2,7 +2,7 @@
 ```Bash
 # Get number of lines
 wc -l filename
-cat filename | wc -l
+nl filename
 
 # Redirection
 # Redirect line 1 to file3, line 2 to file4

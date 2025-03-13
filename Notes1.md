@@ -45,9 +45,9 @@ rm dir-name
 
 # Create empty files (redirection commands, same as >)
 touch file1 file2 file3
-# Create a file with content
+# Create a file and overwrite a file with content
 echo "text" > file-name
-# Overwrite with content
+# Append a file with content
 echo "text" >> file-name
 
 
