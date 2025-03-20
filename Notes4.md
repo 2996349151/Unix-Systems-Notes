@@ -55,7 +55,7 @@ grep "pattern" filename
 
 ```Bash
 # For a string, use =~ to use regular expression
-let re = "^[A-Za-z]"
+re="^[A-Za-z]"
 read DATA
 if [[ $DATA =~ $re ]]; then
     echo "The string begins with a character"
