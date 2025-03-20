@@ -1,4 +1,4 @@
-# Lab1
+## Basics
 ```Bash 
 # Who am i
 whoami

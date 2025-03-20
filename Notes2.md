@@ -1,5 +1,3 @@
-# Scripting Basics
-
 ## File permissions
 File information  
 * Permission:

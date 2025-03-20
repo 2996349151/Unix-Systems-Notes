@@ -27,7 +27,7 @@ cat filename | cut -d : -f 1
 
 ```bash
 # IF
-Space for [[ and ]] are needed
+# Space for [[ and ]] are needed
 if [[ some_condiition ]]; then
 # command
 else
