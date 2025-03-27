@@ -42,6 +42,8 @@ rm file-name
 rm ~/dir1/*.txt
 # Remove a nonempty direectory
 rm dir-name
+# Remove everything
+rm -rf dir-name
 
 # Create empty files (redirection commands, same as >)
 touch file1 file2 file3
@@ -76,4 +78,16 @@ echo -n text
 ```Bash
 # Create or edit a file
 nano file-name
+```
+
+## Other useful commands
+```Bash
+# Output input
+cat file-name
+# Output first x lines
+head -x file-name
+# Output last y lines
+tail -y file-name
+# Output sorted lines
+sort file-name
 ```

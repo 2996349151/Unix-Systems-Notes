@@ -67,6 +67,9 @@ echo $ATEST
 lsoutput='ls -l'
 echo $lsoutput
 
+# Command in string
+echo "you are `whoami`"
+
 # Input
 read text
 echo $text
@@ -89,8 +92,9 @@ added_s=$s1$s2
 added_s2="some text: $s1 and $s2"
 
 # Arithmetic operations
-v1=$((v1+v2))
-v2=$((v1+1))
+v1=$((v1 + v2))
+v2=$((v1 + 1))
+v3=$((v1 + 2 * v2))
 ((v1++))
 
 # Number Comparision

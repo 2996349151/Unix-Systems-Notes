@@ -18,6 +18,7 @@ grep "pattern" filename
   * Character Classes: 
     * "[abc]": matches a or b or c
     * "[A-Za-z]": matches any letter
+    * "[^A-Z]": matches no capital letter
     * "\d": equals to [0-9] (not for Bash)
     * "\w"; equals to [A-Za-z0-9_]
     * "\s": any whitespace character

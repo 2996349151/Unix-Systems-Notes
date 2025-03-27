@@ -4,6 +4,9 @@
 wc -l filename
 nl filename
 
+# Get count of words, lines, bytes of a file
+wc filename
+
 # Redirection
 # Redirect line 1 to file3, line 2 to file4
 ls file1 file2 1> file3
@@ -11,9 +14,10 @@ ls file1 file2 2> file4
 # print file1 to file2
 cat file1 > file2 
 
+# Appned file1 to file2
+cat file1 >> file2
+
 # Piping
-# Print content of a file
-cat filename
 # Pipe symple |, meaining command 1's output is used for command 2's input
 # Print less content of filename
 cat filename | less
